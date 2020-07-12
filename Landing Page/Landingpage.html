@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .Toolbar {
+    height:56px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 90;
+}
+
+.header {
+background-color : black;
+height:40%;
+width:100%;
+display: flex;
+align-items: right;
+justify-content: right;
+font-size: calc(10px + 2vmin);
+color: white;
+text-decoration:red;
+overflow: hidden;
+background-color: green;
+padding: 20px 10px;
+}
+
+.Applink {
+color:black;
+margin-left: 15px;
+padding-right: 20px;
+font-size: larger;
+text-decoration: none;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.register{
+margin-left: 20px;
+cursor: pointer;
+height:50px;
+width:87px;
+text-align: center;
+font-weight: bold;
+font-size: large;
+
+}
+.login{
+margin-left: 20px;
+cursor: pointer;
+background-color: green;
+height:50px;
+width:70px;
+text-align: center;
+font-weight: bold;
+font-size: large;
+}
+.login:hover{
+background-color: lightgreen;
+}
+.register:hover{
+background-color : gray;
+color: white;
+}
+.logo {
+font-size: 50px;
+font-weight: bold;
+margin-right: 100px;
+color: green;
+text-decoration: none;
+}
+.input{
+    text-align: center;
+}
+#submitb1 {
+  box-shadow: 0px 10px 14px -7px #276873;
+    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color:#599bb3;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-size:16px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+}
+#submitb1:hover {
+  background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    background-color:#408c99;
+}
+#submitb1:active {
+  position:relative;
+    top:1px;
+}
+        </style>
+    </head>
+    <body>
+        <h1>Quiz App</h1>
+        
+            
+                <header class="Toolbar">
+                <a href="#default" class="logo">Animal Quiz</a>
+                  <a class="AppLink"
+                    
+                    href="https://www.flexischools.com.au/info-for-schools"
+                    target="_blank"
+                    
+                  >
+                    About Quiz
+                  </a>
+                  <a class="AppLink"
+                    
+                    href="https://www.flexischools.com.au/info-for-schools"
+                    target="_blank"
+                >
+                    Rules
+                  </a>
+                  <a class="AppLink"
+                    
+                    href="https://www.flexischools.com.au/info-for-schools"
+                    target="_blank"
+                   
+                  >
+                    Contact us
+                  </a>              
+                </header>
+                <form action="Quiz.html">
+                <div class="input" >
+                    <h1 >About Yourself</h1>
+                    <p>Enter your details to play the game</p>
+                    <input type="text" placeholder="First Name" required/> <br/> <br/> <br/>
+                    <input type="text" placeholder="Last Name" required/> <br/> <br/> <br/>
+                    <input type="email" placeholder="Email Address" required/> <br/><br/> <br/>
+                    <input type="password" placeholder="Password" required/> <br/><br/> <br/>
+                    <button id="submitb1" type="submit" value="submit">Start Quizz</button>
+                </div>
+                </form>
+                
+        
+    </body>
+</html>

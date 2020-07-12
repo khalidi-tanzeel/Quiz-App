@@ -1,0 +1,73 @@
+<style>
+    #submitb1 {
+   box-shadow: 0px 10px 14px -7px #276873;
+    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color:#599bb3;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-size:16px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+    }
+   #submitb1:hover {
+  background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    background-color:#408c99;
+   }
+   #submitb1:active {
+  position:relative;
+    top:1px;
+   }
+</style>
+
+
+<script>
+    function handleCreate(c){
+    var parent = document.getElementById("div1");
+    var child = document.createElement("h4");
+    var text = document.createTextNode("Catepillars are soo small they cant eat anything except the food that are present around them");
+    child.appendChild(text);
+    parent.appendChild(child);
+    }
+    function handleCreate3(f){
+    var parent = document.getElementById("div4");
+    var child = document.createElement("h4");
+    var text = document.createTextNode("H2O");
+    child.appendChild(text);
+    parent.appendChild(child);
+    }
+    function validate(){
+        var y=document.write.answer2.value;
+        if(y===""){
+    alert("Please give an answer");
+    return false;
+}
+else if(y==="H2O"){
+    alert("Woww you are right");
+    return true;
+}
+else{
+    alert("Incorrect Answer Try Again");
+    return false;
+} 
+} 
+    
+</script>
+<body style="background-color: rgb(150, 165, 170);">
+    <form name="myform" action="question3.html" onsubmit="return validate()">
+        <h3>2. What's the formula of water</h3>
+        <select name="answer2"  >
+        <option></option>
+        <option>H2O</option>
+        <option>H2O2</option>
+        <option>NH2</option>
+        <option>H2CL</option> </select> <br/> <br/> <br/>
+        <div id="div1"><input id="submitb1" type="button" value="Hint" onclick="handleCreate()"/></div><br/> <br/>
+        <div id="div4"><input id="submitb1" type="button" value="Check Answer" onclick="handleCreate3()"/></div>
+        <input id="submitb1" type="submit" style="margin-left: 600px;" value="submit"></input>
+        </form>
+</body>
